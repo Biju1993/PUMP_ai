@@ -96,7 +96,7 @@ mflow=np.sqrt((my-b)/a)
 v13 = round(form.number_input(
     label="Measured flowrate in m^3/h",
     min_value=0.0,  # minimum value allowed
-    max_value=mflow+100.0,  # maximum value allowed
+    max_value=cmh+(cmh*40/100.0),  # maximum value allowed
     value=mflow,  # default value
     step=0.1,  # step size
     format="%.2f"  # number format
@@ -173,7 +173,7 @@ plt.show()
 
 # Calculation
 
-v9=((v8/3600)*1000*9.81*v7)/1000
+v9=round(((v8/3600)*1000*9.81*v7)/1000,2)
 v14=round((((v13/3600)*1000*9.81*v12)/1000),2)
 
 
