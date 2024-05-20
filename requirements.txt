@@ -4,7 +4,6 @@ dnspython
 pymongo[srv]
 pymongo
 pillow
-io
 datetime
 python-docx
 docx
