@@ -1,0 +1,13 @@
+jinja2
+os
+matplotlib
+dnspython
+pymongo[srv]
+pymongo
+pillow
+io
+datetime
+python-docx
+docx
+numpy
+pandas
