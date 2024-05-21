@@ -97,10 +97,18 @@ v13 = round(form.number_input(
     label="Measured flowrate in m^3/h",
     min_value=0.0,  # minimum value allowed
     max_value=cmh+cmh,  # maximum value allowed
-    value=mflow,  # default value
     step=0.1,  # step size
     format="%.2f"  # number format
 ),2)
+
+# v13 = round(form.number_input(
+#     label="Measured flowrate in m^3/h",
+#     min_value=0.0,  # minimum value allowed
+#     max_value=cmh+cmh,  # maximum value allowed
+#     value=cmh,  # default value
+#     step=0.1,  # step size
+#     format="%.2f"  # number format
+# ),2)
 
 
 #ACTUAL SYSTEM CURVE
@@ -181,14 +189,14 @@ v15=form.number_input("RATED_MOTOR_POWER_IN_KW",value=15)
 
 v18=form.slider("RATED_MOTOR_EFFICIENCY", 50.0, 100.0,90.0,step=0.5)
 v16=form.slider("RATED_MOTOR_POWER_FACTOR", 0.7, 1.0,0.89,step=0.05)
-v17=round(form.number_input("SELECTED_RATED_CURRENT",value=((1000*v15)/(1.732*415*0.9))),2)
-
+v17=round(form.number_input("SELECTED_RATED_CURRENT",2))
+# v17=round(form.number_input("SELECTED_RATED_CURRENT",value=((1000*v15)/(1.732*415*0.9))),2)
 v19=form.number_input("MEASURED_VOLTAGE_R_AND_Y",value=415)
 v20=form.number_input("MEASURED_VOLTAGE_Y_AND_B",value=415)
 v21=form.number_input("MEASURED_VOLTAGE_B_AND_R",value=415)
-v22=round(form.number_input("MEASURED_CURRENT_R",value=v17-3),2)
-v23=round(form.number_input("MEASURED_CURRENT_Y",value=v17-3),2)
-v24=round(form.number_input("MEASURED_CURRENT_B",value=v17-3),2)
+v22=round(form.number_input("MEASURED_CURRENT_R"),2)
+v23=round(form.number_input("MEASURED_CURRENT_Y"),2)
+v24=round(form.number_input("MEASURED_CURRENT_B"),2)
 
 
 v25=round((1.732*((v19+v20+v21)/3)*((v22+v23+v24)/3)*v16)/1000,2)
