@@ -189,7 +189,7 @@ v15=form.number_input("RATED_MOTOR_POWER_IN_KW",value=15)
 
 v18=form.slider("RATED_MOTOR_EFFICIENCY", 50.0, 100.0,90.0,step=0.5)
 v16=form.slider("RATED_MOTOR_POWER_FACTOR", 0.7, 1.0,0.89,step=0.05)
-v17=round(form.number_input("SELECTED_RATED_CURRENT",2))
+v17=round(form.number_input("SELECTED_RATED_CURRENT",value=1),2)
 # v17=round(form.number_input("SELECTED_RATED_CURRENT",value=((1000*v15)/(1.732*415*0.9))),2)
 v19=form.number_input("MEASURED_VOLTAGE_R_AND_Y",value=415)
 v20=form.number_input("MEASURED_VOLTAGE_Y_AND_B",value=415)
