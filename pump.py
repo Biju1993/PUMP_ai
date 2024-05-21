@@ -153,7 +153,7 @@ plt.title('Pump Head-Flow Curve')
 
 plt.annotate("BEP",
                   xy=(cmh, rph), xycoords='data',
-                  xytext=(cmh+80,rph+4), textcoords='data',
+                  xytext=(cmh+(cmh*10/100),rph+(rph*10/100)), textcoords='data',
                   size=10, va="center", ha="center",
                   bbox=dict(boxstyle="round4", fc="w"),
                   arrowprops=dict(arrowstyle="-|>",
