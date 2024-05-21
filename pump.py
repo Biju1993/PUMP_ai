@@ -93,22 +93,22 @@ plt.plot(x, y)
 
 mflow=np.sqrt((my-b)/a)
 
-v13 = round(form.number_input(
-    label="Measured flowrate in m^3/h",
-    min_value=0.0,  # minimum value allowed
-    max_value=cmh+cmh,  # maximum value allowed
-    step=0.1,  # step size
-    format="%.2f"  # number format
-),2)
-
 # v13 = round(form.number_input(
 #     label="Measured flowrate in m^3/h",
 #     min_value=0.0,  # minimum value allowed
 #     max_value=cmh+cmh,  # maximum value allowed
-#     value=cmh,  # default value
 #     step=0.1,  # step size
 #     format="%.2f"  # number format
 # ),2)
+
+v13 = round(form.number_input(
+    label="Measured flowrate in m^3/h",
+    min_value=0.0,  # minimum value allowed
+    max_value=cmh+cmh,  # maximum value allowed
+    value=cmh,  # default value
+    step=0.1,  # step size
+    format="%.2f"  # number format
+),2)
 
 
 #ACTUAL SYSTEM CURVE
