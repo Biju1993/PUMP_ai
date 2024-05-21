@@ -194,9 +194,9 @@ v17=round(form.number_input("SELECTED_RATED_CURRENT",value=1),2)
 v19=form.number_input("MEASURED_VOLTAGE_R_AND_Y",value=415)
 v20=form.number_input("MEASURED_VOLTAGE_Y_AND_B",value=415)
 v21=form.number_input("MEASURED_VOLTAGE_B_AND_R",value=415)
-v22=round(form.number_input("MEASURED_CURRENT_R"),2)
-v23=round(form.number_input("MEASURED_CURRENT_Y"),2)
-v24=round(form.number_input("MEASURED_CURRENT_B"),2)
+v22=round(form.number_input("MEASURED_CURRENT_R",value=1),2)
+v23=round(form.number_input("MEASURED_CURRENT_Y",value=1),2)
+v24=round(form.number_input("MEASURED_CURRENT_B",value=1),2)
 
 
 v25=round((1.732*((v19+v20+v21)/3)*((v22+v23+v24)/3)*v16)/1000,2)
