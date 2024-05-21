@@ -162,7 +162,7 @@ plt.annotate("BEP",
 
 # Add a legend
 plt.legend(loc='upper right',fontsize=8)
-plt.xlim(0,cmh+(cmh*30/100))
+plt.xlim(0,cmh+cmh)
 # Display the plot
 plt.grid(True)
 # plt.figure(figsize=(5, 5))
